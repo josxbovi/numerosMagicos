@@ -1,9 +1,9 @@
 document.getElementById('botonEmpezar').addEventListener('click', function() {
-    var randomNumber = Math.floor(Math.random() * 100) + 1;
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
     document.getElementById('contenedor').style.display = 'block';
 
     document.getElementById('botonAdivinar').addEventListener('click', function() {
-      var respuestaUser = parseInt(document.getElementById('inputAdivinar').value);
+      let respuestaUser = parseInt(document.getElementById('inputAdivinar').value);
 
       if (respuestaUser === randomNumber) {
         alert('¡Adivinaste el número!');
